@@ -76,12 +76,12 @@ func (s *StreamClient) On(eventsType []types.EventType, collectionSlug string, c
 	}
 
 	for _, eventType := range eventsType {
-		s.socket.Logger.Printf(phx.LogInfo, "channel", "subscribing to %s events on %s\n", eventType, topic)
+		s.socket.Logger.Printf(phx.LogInfo, "channel", "subscribing to %s events on %s", eventType, topic)
 		channel.On(string(eventType), callback)
 	}
 
 	return func() error {
-		s.socket.Logger.Println(phx.LogInfo, "channel", "unsubscribing from all events on %s", topic)
+		s.socket.Logger.Printf(phx.LogInfo, "channel", "unsubscribing from all events on %s", topic)
 		leave, err := channel.Leave()
 		if err != nil {
 			return err
