@@ -33,12 +33,12 @@ In order to make onboarding easy, we've integrated the OpenSea Stream API with o
 
 ```golang
 import (
-"fmt"
-"github.com/andrewkarpich/opensea-stream-go/entity"
-"github.com/andrewkarpich/opensea-stream-go/opensea"
-"github.com/andrewkarpich/opensea-stream-go/types"
-"github.com/andrewkarpich/mapstructure"
-"github.com/nshafer/phx"
+  "fmt"
+  "github.com/andrewkarpich/opensea-stream-go/entity"
+  "github.com/andrewkarpich/opensea-stream-go/opensea"
+  "github.com/andrewkarpich/opensea-stream-go/types"
+  "github.com/mitchellh/mapstructure"
+  "github.com/nshafer/phx"
 )
 
 func main() {

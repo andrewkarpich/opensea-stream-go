@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/foundVanting/opensea-stream-go/entity"
-	"github.com/foundVanting/opensea-stream-go/opensea"
-	"github.com/foundVanting/opensea-stream-go/types"
+	"github.com/andrewkarpich/opensea-stream-go/entity"
+	"github.com/andrewkarpich/opensea-stream-go/opensea"
+	"github.com/andrewkarpich/opensea-stream-go/types"
 	"github.com/mitchellh/mapstructure"
 	"github.com/xiaowang7777/phx"
 )
